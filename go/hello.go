@@ -3,6 +3,9 @@ import "fmt"
 
 func main() {
     var i int = 1
+    i2 := 10.8
+    i3 := float64(i2)
+    fmt.Println(i3)
     i = 10
     var f float64 = 1.5
     const chang int = 5
@@ -35,7 +38,7 @@ func main() {
 
 
     // 管道
-    var guandao chan int
+//     var guandao chan int
 
 
     ch:=make(chan string)

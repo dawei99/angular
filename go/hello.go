@@ -1,12 +1,16 @@
 package main
 import (
     "fmt"
-    "github.com/tidwall/gjson"
+//     "github.com/tidwall/gjson"
     "reflect"
     //"os"
+//     "strconv"
 )
 
 func main() {
+
+
+    fmt.Println(rune('A'))
 
      reflect.TypeOf(10)
 
@@ -100,18 +104,18 @@ func main() {
     fmt.Println(my_map2)
     my_map3["a"] = -200.946164529459
     fmt.Println(my_map3["a"])
-    my_map3.forEach(func(key, value float64) {
-       fmt.Println(key, value)
-    })
+//     my_map3.forEach(func(key, value float64) {
+//        fmt.Println(key, value)
+//     })
 
     // 处理json
     fmt.Println("处理json----------------------")
-    jsonstr1 := `{"file":"Book1.xlsx","images":[{"path":"/home/rjh/www/angular/go/image.png"}]}`
-    p.Get("images").ForEach(func(key, value gjson.Result) bool {
-         //fmt.Println(value.Get("path"))
-         fmt.Println(key)
-         return true
-    })
+//     jsonstr1 := `{"file":"Book1.xlsx","images":[{"path":"/home/rjh/www/angular/go/image.png"}]}`
+//     p.Get("images").ForEach(func(key, value gjson.Result) bool {
+//          //fmt.Println(value.Get("path"))
+//          fmt.Println(key)
+//          return true
+//     })
 
 
 }

@@ -1,0 +1,76 @@
+<style type="text/css">
+.ainuo_indexnavtab .nav-icons.home-icons a img {
+width: 3.2rem;
+    height: 3.2rem;
+}
+</style>
+<div class="ainuo_indexnavtab cl">
+		<div class="swiper-wrapper" id="iconWarp">
+			<div class="swiper-slide">
+                <div class="iconsBox">
+					<div class="nav-icons home-icons">
+                    	[index=1]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=2]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=3]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=4]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=5]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=6]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=7]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=8]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+
+
+                   </div>
+				</div>
+			</div>
+            <div class="swiper-slide">
+                <div class="iconsBox">
+					<div class="nav-icons home-icons">
+                   		[index=9]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=10]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=11]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=12]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=13]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=14]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+                        [index=15]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+
+                        [index=16]
+                   		<a href="{url}"><img src="{icon}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a>
+                        [/index]
+
+                   </div>
+				</div>
+			</div>
+	</div>
+	<div class="pointBox swiper-pagination-bullets" id="pointBox">
+    </div>
+</div>

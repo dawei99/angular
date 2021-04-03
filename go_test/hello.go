@@ -3,14 +3,14 @@ import (
     "fmt"
 //     "github.com/tidwall/gjson"
     "reflect"
-    //"os"
+//    "os"
 //     "strconv"
 )
 
 func main() {
 
 
-    fmt.Println(rune('A'))
+    fmt.Println(rune('a'))
 
      reflect.TypeOf(10)
 
@@ -117,7 +117,19 @@ func main() {
 //          return true
 //     })
 
+    fmt.Println("处理json----------------------")
+    Args := make(map[string]interface{})
+    Args["id"] =  1
+    Args["plan_id"] =  "第一个"
+    fmt.Println(Args["plan_id"])
 
+    //panic("我是PHP,我要抛出一个异常了，等下defer会通过recover捕获这个异常，然后正常处理，使后续程序正常运行。")
+
+//    var r1, r2 float64 = test()
+//    fmt.Println(r1, r2)
+
+    a2, b2 := typedTwoValues()
+    fmt.Println(a2, b2)
 }
 
 func printer(c chan int){
@@ -129,4 +141,12 @@ func printer(c chan int){
             break
         }
     }
+}
+
+func test2() (float64, float64) {
+    return 1.2, 2.3
+}
+
+func typedTwoValues() (int, int) {
+   return 1, 2
 }

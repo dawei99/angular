@@ -5,6 +5,7 @@ import (
     "reflect"
 //    "os"
 //     "strconv"
+    _ "dawei-test/calc"
 )
 
 func main() {

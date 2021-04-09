@@ -87,12 +87,12 @@ func main (){
 	sort.Strings(paixuPiepian)
 	fmt.Println(paixuPiepian)
 
-	var list = []*Profile{
+	var list = []Profile{
 		{Name: "张三", Age: 30, Married: true},
 	}
 
-	var queryData = func(name string , age int) *Profile {
-		var result *Profile
+	var queryData = func(name string , age int) Profile {
+		var result Profile
 		for _, item := range list {
 			if item.Name == name {
 				result = item

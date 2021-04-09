@@ -1,11 +1,8 @@
 package main
 import (
     "fmt"
-//     "github.com/tidwall/gjson"
+    "github.com/tidwall/gjson"
     "reflect"
-//    "os"
-//     "strconv"
-    _ "dawei-test/calc"
 )
 
 func main() {

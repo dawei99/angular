@@ -22,14 +22,14 @@ func main(){
 	//}()
 
 	// sync.map
-	var syncMap  sync.Map
-	syncMap.Store("a", "b")
-	syncMap.Store(1, 10.8)
-	fmt.Println(syncMap.Load("a"))
-	fmt.Println(syncMap.Load("a"))
-	fmt.Println(syncMap.Load("a"))
+	var syncMap sync.Map
+	syncMap.Store("name", "style");
+	syncMap.Store(1, 10.5);
+	value,_ := syncMap.Load(1)
+	fmt.Println(value)
 
-	//for {
-	//
-	//}
+	syncMap.Range(func(k, value interface{}) bool {
+		fmt.Println(k, "=", value)
+		return true
+	})
 }

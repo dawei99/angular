@@ -1,7 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-
+error_reporting(0);
+ini_set("display_errors", false);
 
 class myException extends Exception {
     public function __toString()
@@ -9,18 +8,24 @@ class myException extends Exception {
         return "犯错了！！！";
     }
 }
-
 try {
     set_error_handler(function($no, $error, $file, $line){
-        throw new Exception("no: $no\n err: $error\n file:$file \n line:$line\n");
+//        throw new Exception("no: $no\n err: $error\n file:$file \n line:$line\n");
+        echo "buhuo";
+        return true;
     });
-    //require_once "test.php";
-    //throw new Exception('style');
-    $a = $y;
+    require_once "test.php";
+//    throw new Exception('style');
+//    $a = $y;
+//    throw  new myException("aaaaa");
+
 } catch (myException $e) {
-    echo $e;
+//    var_dump($e->getTrace());
+//    var_dump($e->getMessage());
+//    var_dump($e->getLine());
+//    var_dump($e->getFile());
 } catch (Exception $e) {
-    echo $e->getMessage();
-} catch (Error $error) {
-    print_r($error);
+//    var_dump($e);
+} catch (Error $e) {
+//    var_dump($e);
 }

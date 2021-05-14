@@ -22,8 +22,8 @@ $y = 11; // 101
 
 $img = "./sign.png";
 list($srcWith, $srcHeight, $type) = getimagesize($img);
-$width=100;
-$height=30;
+$width=116;
+$height=47;
 
 header ('Content-Type: image/png');
 
@@ -36,7 +36,7 @@ switch($type){
 
 $trueColor = imagecreatetruecolor($width, $height);
 imagecopyresampled($trueColor, $gdImageStream, 0, 0, 0,0, $width, $height, $srcWith, $srcHeight);
-imagepng($trueColor);
+imagepng($trueColor, "new.png");
 imagedestroy($trueColor);
 imagedestroy($gdImageStream);
 die;
